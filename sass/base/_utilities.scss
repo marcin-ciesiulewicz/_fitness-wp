@@ -1,0 +1,8 @@
+.u-left-shadow {
+    box-shadow: -10px 10px 20px 2px rgba(0, 0, 0, 0.35);
+
+    @include respond(md) {
+        box-shadow: none;
+    }
+
+}

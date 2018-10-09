@@ -1,0 +1,299 @@
+.section-services {
+    background: $primary-green;
+    padding: 8rem 0;
+
+    @include respond(sm) { padding: 8rem 3rem; }
+
+    &__container {
+        width: 100%;
+
+        @include respond(md) { 
+            padding-bottom: 1rem;
+         }
+
+    }
+
+    &__icon {
+        font-size: 4rem;
+        padding-bottom: .5rem;
+    }
+    
+    &__heading {
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        padding-bottom: 2.8rem;
+        font-weight: 300;
+
+        @include respond(lg) { font-size: 3rem; }
+
+    }
+    
+    &__text {
+        font-size: 1.65rem;
+        line-height: 1.4;
+        padding-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: $color-white;
+            font-size: 1.8rem;
+            text-decoration: none;
+            @include animate( all, .3s );
+        }
+
+        &:hover {
+            color: $primary-red;
+        }
+    }
+
+}
+
+.section-info-1 {
+    position: relative;
+    background: $primary-green;
+    padding: 5rem 0 0;
+    color: $color-black;
+
+    @include col-remove-padd;
+
+    &__container {
+        background: $color-white;
+        height: 100%;
+        text-align: center;
+        padding: 6rem 2rem;
+
+        @include respond(sm) { padding: 6rem 3rem; }
+
+    }
+    
+    &__logo-mini {
+        padding: 1.5rem 0;
+    }
+    
+    &__text {
+        font-family: "Open Sans";
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+
+    &__link {
+        display: inline-block;
+
+        &:link,
+        &:visited {
+            color: $primary-green;
+            font-size: 1.4rem;
+            text-decoration: underline;
+            text-transform: capitalize;            
+            @include animate( all, .3s );
+            margin-top: .5rem;
+        }
+
+        &:hover {
+            color: $primary-red;
+        }
+    }
+
+    &__img {
+        width:100%;
+        height: 100%;
+    }
+
+}
+
+.section-info-2 {
+    position: relative;
+    background: $primary-red;
+
+    @include col-remove-padd;
+
+    &__container {
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 329px;
+
+        @include respond(xl) { height: 250px; }
+        @include respond(md) { height: 200px; }
+
+    }
+
+    .ro-top {
+
+        .tag {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            
+            &:link,
+            &:visited {
+                color: $color-white;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 700;
+                letter-spacing: 3.5px;
+                text-decoration: none;
+                @include animate( all , .3s );
+            }
+    
+            &:hover {
+                color: $primary-green;
+            }
+    
+        }
+    }
+
+    .ro-bottom {
+        position: relative;
+        height: 323px;
+        margin-top: -5px;
+        padding: 7rem 3rem;
+
+        @include respond(xl) { height: 250px; }
+        @include respond(md) { height: 200px; }
+        @include respond(sm) { padding: 7rem 6rem; }
+
+        &--white {
+            background: $color-white;
+
+            &-text {
+                color: $color-grey-dark-4;
+                font-family: "Open Sanse";
+                font-size: 1.4rem;
+                margin-top: 3.5rem;
+            }
+
+            i {
+                font-size: 5rem;
+                color: rgba($color-black, .1);
+                position: absolute;
+                top: 21%;
+                right: 10%;
+            }
+
+        }
+        
+        &--green {
+            background: $primary-green;
+
+            .section__heading {
+                margin-top: -12px;
+            
+                .small {
+                    color: $color-white;
+                }
+                
+                .big {
+                    color: $color-white;
+                    font-weight: 300;
+                    font-size: 4rem;
+                }
+            }
+
+            &-text {
+                color: $color-white;
+                font-family: "Open Sanse";
+                font-size: 1.4rem;
+                margin-top: 3.5rem;
+
+                @include respond(sm) { margin-top: 2rem; }
+
+            }
+
+            i {
+                font-size: 5rem;
+                color: rgba($color-white, .8);
+                position: absolute;
+                top: 21%;
+                right: 10%;
+            }
+
+        }
+
+    }
+
+}
+
+.section-banner {
+    position: relative;
+    background-color: $primary-blue;
+    height: 100vh;
+
+
+    @include respond( lg ) {
+        height: 80vh;
+    }
+    
+    &::after {
+        content: '';
+        display: block;
+        position: relative;
+        background-image: url(../img/pick_7.png);
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 90%, 0 80%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 90%, 0 80%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text-box {
+        @include abs-center;
+        top: 45%;
+        z-index: 2;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+
+        @include mq( 1366px ) {
+            font-size: 3.8rem;
+        }
+
+        @include respond( xl ) {
+            font-size: 3.6rem;
+            margin-bottom: 1rem;
+        }
+
+        @include respond( md ) {
+            font-size: 3.3rem;
+        }
+        
+    }
+    
+    &__subheading {
+        font-size: 1.8rem;
+
+        @include respond( xl ) {
+            font-size: 1.5rem;
+        }
+
+        @include respond( md ) {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    &__fill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 7rem;
+        background: $primary-red;
+        -webkit-clip-path: polygon(0 50%, 0% 100%, 82% 100%);
+        clip-path: polygon(0 50%, 0% 100%, 82% 100%);
+    }
+
+}

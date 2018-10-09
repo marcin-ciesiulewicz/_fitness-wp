@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} 
+
+html {
+    font-size: 62.5%; // 1rem = 10px 10/16 = 62.5
+
+    @include respond(xl) {
+        font-size: 50%;
+    }
+
+    @include respond(lg) {
+        font-size: 43.75%;
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+//nadpisanie czcionek w inputach i buttonach bootstrapa oraz navbar-toggle
+// .btn , .form-control {
+//     padding: .6rem 1.2rem;
+//     font-size: 1.6rem;
+// }
+
+.navbar-toggler {
+    padding: 4px 12px;
+    font-size: 20px;
+}
+

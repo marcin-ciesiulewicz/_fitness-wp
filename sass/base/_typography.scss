@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+body {
+    font-family: 'Dosis', "Lato","Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-white;
+}
+
+.section__heading {
+    line-height: 1.2;
+    text-transform: uppercase;
+    
+    .big {
+        display: block;
+        color: $primary-green;
+        font-size: 3rem;
+        font-family: "Open Sans";
+        font-weight: 400;
+    }
+    
+    .small {
+        display: block;
+        color: $primary-red;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+}
